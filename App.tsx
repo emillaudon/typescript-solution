@@ -103,14 +103,7 @@ const HomeView = ({ navigation }: MainScreenProps) => {
           return <ListItem item={item} navigation={navigation} />;
         }}
       />
-      <Button
-        title="dddd"
-        onPress={async () => {
-          let data: ShoppingItem[] = await getData();
-          console.log(data);
-          setData(data);
-        }}
-      />
+      
       <StatusBar style="auto" />
     </View>
   );
